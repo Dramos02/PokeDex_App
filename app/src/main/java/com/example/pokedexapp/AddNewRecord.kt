@@ -1,5 +1,6 @@
 package com.example.pokedexapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -43,7 +44,8 @@ class AddNewRecord : AppCompatActivity() {
             }
         }
         p_Cancel.setOnClickListener {
-            finish()
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
         }
     }
     private fun f_InsertRecord(name_is: String, number_is: String, power_is: String, image_is: String) {
