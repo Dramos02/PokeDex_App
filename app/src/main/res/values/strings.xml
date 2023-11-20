@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PokeDexApp</string>
+    <string name="titleApp">PokeDexApp</string>
+    <string name="copyrights">Copyrights by @github/Dramos02 - Dominic Ramos</string>
+    <string name="addRecTitle">Pokemon Data</string>
+    <string name="characterName">Name</string>
+    <string name="characterGen">Generation (ex: 1st, 2nd ~ 9th)</string>
+    <string name="characterType">Type (ex: Fire, Water and Etc)</string>
+    <string name="characterImgurl">Image URL</string>
+    <string name="btnSaveRec">Save</string>
+    <string name="btnCancelRect">Cancel</string>
+    <string name="btnEdit">Edit</string>
+    <string name="btnDelete">Delete</string>
+    <string name="searchView">Search</string>
+    <string name="pokeUpdate">Update</string>
+</resources>

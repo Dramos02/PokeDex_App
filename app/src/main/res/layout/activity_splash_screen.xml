@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303F9F"
+    tools:context=".SplashScreen">
+
+    <TextView
+        android:id="@+id/titleAppTxt"
+        android:layout_width="347dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/pokemonhollow"
+        android:text="@string/titleApp"
+        android:textAlignment="center"
+        android:textColor="#FBC02D"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="203dp"
+        android:layout_height="167dp"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="256dp"
+            android:layout_height="203dp"
+            android:layout_gravity="center"
+            android:background="#303F9F"
+            android:foregroundGravity="center"
+            android:src="@drawable/splash" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/copyrightsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F8F0F0"
+        android:text="@string/copyrights"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.442" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
